@@ -1,4 +1,4 @@
-header {
+.avatar-header {
   height: 400px;
   width: 100%;
   display: flex;
@@ -9,6 +9,6 @@ header {
 }
 
 
-img {
+.avatar-img {
   margin-top: 2px;
 }
