@@ -5,8 +5,8 @@ nav {
   background-color: #4056A1;
   padding: 1.5em;
   color: #FFFFFF; 
-}
-
-.social-header {
   font-family: bungee;
+  overflow:hidden;
+  position: fixed; 
+  top: 0;
 }
