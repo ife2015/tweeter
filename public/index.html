@@ -34,6 +34,7 @@
      <!-- Counter JS -->
      <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     
+    <!--Bootstrap icons-->
      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 
   </head>
@@ -57,35 +58,38 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form method="POST" action="/tweets">
+        <form class="tweet-form" method="POST" action="/tweets">
           <div>
-          <label for="tweet-text">What are you humming about?</label>
-        </div>
+            <label for="tweet-text">What are you humming about?</label>
+          </div>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="tweet-data">
-            <button type="submit">Tweet</button>
+            <button class="tweet-submit" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+        <p class="error-message">
+          <!-- <i class="fas fa-exclamation-triangle"></i> -->
+        </p>
       </section>
 
-      <article class="tweet-box">
-        <header class="post-header">
-          <div class="handle"><img src="/images/img_avatar.png" alt="prof image here"><span>Newton</span></div>
-          <div class="hide-handle-name">@jellyroxx</div>
-        </header>
-        <p class="post-text">If I have seeen further it is</p>
-        <footer class="post-footer">
-          <span>10 days ago</span>
-          <span class="icons">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-flag"></i>
-          </span>
-        </footer>
-      </article>
-
-
+      <div class="tweets-container">
+        <article class="tweet-box">
+          <header class="post-header">
+            <div class="handle"><img src="/images/img_avatar.png" alt="prof image here"><span>Newton</span></div>
+            <div class="hide-handle-name">@jellyroxx</div>
+          </header>
+          <p class="post-text">If I have seeen further it is</p>
+          <footer class="post-footer">
+            <span>10 days ago</span>
+            <span class="icons">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-flag"></i>
+            </span>
+          </footer>
+        </article>
+      </div>
     </main>
   </body>
 </html>
