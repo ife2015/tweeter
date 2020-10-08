@@ -25,6 +25,9 @@
     <!-- Feed Posts CSS -->
     <link rel="stylesheet" href="/styles/feed.css" type="text/css" />
 
+    <!-- Response Design Posts CSS -->
+    <link rel="stylesheet" href="/styles/desktopchange.css" type="text/css" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -43,24 +46,26 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <span class="banner-message"><strong>Write</strong> a new tweet</span>
     </nav>
 
+  <div class="header-posts">
     <header class="avatar-header">
       <div>
-          <img class="avatar-img" src="/images/profile-hex.png"> 
+        <img class="avatar-img" src="/images/profile-hex.png">
       </div>
       <br>
       <div class="profile-name">
-          <h2>Ife Olaifa</h2>
+        <h2>Ife Olaifa</h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <form class="tweet-form" method="POST" action="/tweets">
           <div>
-            <label for="tweet-text">What are you humming about?</label>
+            <label for="tweet-text"><strong>What are you humming about?</strong></label>
           </div>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="tweet-data">
@@ -90,5 +95,6 @@
         </article>
       </div>
     </main>
+  </div>
   </body>
 </html>
