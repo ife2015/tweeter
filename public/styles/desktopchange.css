@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1024px) {
+  .header-posts {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 120px;
+    padding-top: 0px;
+  }
+  .avatar-img {
+    height: 150px;
+    width: auto;
+    margin-top:50px;
+  }
+
+  .avatar-header {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 15px;
+  }
+
+  main {
+    width: 60%;
+    margin-top: 50px;
+  }
+
+  .profile-name {
+    margin-bottom: 40px;
+  }
+
+}
