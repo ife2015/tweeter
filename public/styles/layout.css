@@ -16,7 +16,8 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  /* background-color: #f4f1ec; */
+  background-image: url(/images/throwback2.png);
   font-family:Source Sans Pro,sans-serif;
   font-size: 24px;
 }
